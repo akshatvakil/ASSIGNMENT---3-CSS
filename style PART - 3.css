@@ -1,0 +1,157 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'BodyFont';
+    src: url('body-font.woff2') format('woff2'),
+         url('body-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HeadingFont';
+    src: url('heading-font.woff2') format('woff2'),
+         url('heading-font.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  h1 {
+    font-size: 2.4rem; 
+    text-align: center; 
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: cursive;
+    
+  }
+
+
+  
+  body {
+
+    letter-spacing: 0.05rem; 
+    word-spacing: 0.1rem; 
+  }
+  section h1 + p,
+  section h2 + p,
+  section h3 + p {
+  text-indent: 2rem; 
+  margin-top: 0.5rem;}
+  p {
+    margin-bottom: 1rem;
+  }
+  a {
+    color: #a66; 
+    text-decoration: underline; 
+  }
+  
+  
+  a:visited {
+    color: #844; 
+  }
+  a:hover,
+a:focus {
+  color: #c77; 
+  text-decoration: none; 
+  outline: none; 
+ }
+ a:active {
+    color: white; 
+    background-color: #a66; 
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  a[href^="http"]:after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("external-link-52.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+  }
+  ul, ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem; 
+ }
+ li {
+    line-height: 1.6; 
+    margin-bottom: 0.5rem; 
+  }
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    position: relative;
+    padding-left: 1.5rem; 
+  }
+  ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.4rem; 
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url("Bulletpoint-512.webp"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  nav ul li{
+    border: 1px solid;
+    border-color: #a66;
+    margin-top: 20px;
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+  }
